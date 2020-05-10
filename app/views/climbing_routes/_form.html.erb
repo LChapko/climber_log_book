@@ -1,0 +1,22 @@
+<%= form_with(url: "/climbing_routes", method: :post) do |f| %>
+  <%= f.fields_for(:climbing_route) do |form| %>
+    <div class="field">
+      <%= form.label :route_name %>
+      <%= form.text_field :route_name, value: @climbing_route.route_name %>
+    </div>
+
+    <div class="field">
+      <%= form.label :beta %>
+      <%= form.text_field :beta, value: @climbing_route.beta %>
+    </div>
+
+    <div class="field">
+      <%= form.label :description %>
+      <%= form.text_field :description, value: @climbing_route.description %>
+    </div>
+  <% end %>
+  <div class="actions">
+    <%= hidden_field(:climbing_route, :id, :value => @climbing_route.id) %>
+    <%= f.submit %>
+  </div>
+<% end %>

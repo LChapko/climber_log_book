@@ -1,0 +1,25 @@
+<h1>Climbing Routes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Route Name</th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @climbing_routes.each do |climbing_route| %>
+      <tr class="jets-element-to-delete">
+        <td><%= climbing_route.route_name %></td>
+        <td><%= link_to 'Show', "/climbing_routes/#{climbing_route.id}" %></td>
+        <td><%= link_to 'Edit', edit_climbing_route_path(climbing_route.id) %></td>
+        <td><%= link_to 'Destroy', "/climbing_routes/#{climbing_route.id}", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Climbing Route', new_climbing_route_path %>

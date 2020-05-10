@@ -1,0 +1,17 @@
+<p>
+  <strong>Route name:</strong>
+  <%= @climbing_route.route_name %>
+</p>
+
+<p>
+  <strong>Beta:</strong>
+  <%= @climbing_route.beta %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @climbing_route.description %>
+</p>
+
+<%= link_to 'Edit', edit_climbing_route_path(@climbing_route.id) %> |
+<%= link_to 'Back', climbing_routes_path %>
