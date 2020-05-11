@@ -12,6 +12,8 @@ Here is a list of some thing that you will need to download and or install befor
 * [jets](https://rubyonjets.com/docs/install/) (don't worry about the database install section since we are using a different database then the default)
 * [dynamodb-local](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html) (there is an easy way to do it on mac or linux but I think you are using windows)
 * [dynamodb-admin](https://github.com/aaronshaf/dynamodb-admin)
+* Clone the project from github by running `git clone https://github.com/ngonzo95/climber_log_book.git` in the directory you want the project to live in.
+    * If you want more practice with git you can use [this site](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
 
 ## Running the app for the first time
 Running the app should be simple once you have everything downloaded all you need to do is
